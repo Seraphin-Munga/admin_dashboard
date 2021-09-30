@@ -1,0 +1,26 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" opened>
+        <mat-grid-list cols="2" rowHeight="2:1">
+            <mat-grid-tile>
+                <mat-icon class="avatar" aria-hidden="false">lunch_dining</mat-icon>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <h4>FOOD DELIVERY</h4>
+            </mat-grid-tile>
+        </mat-grid-list>
+
+        <mat-divider></mat-divider>
+        <ul class="menu">
+            <li *ngFor="let item of menus">
+                <mat-icon aria-hidden="false">{{item.icon}}</mat-icon>
+                <span> {{item.text}}</span>
+            </li>
+        </ul>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-header></app-header>
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>

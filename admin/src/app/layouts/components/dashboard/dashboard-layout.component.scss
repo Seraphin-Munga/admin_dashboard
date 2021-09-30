@@ -1,0 +1,36 @@
+@import "../../../../assets/styling/app-color.scss";
+
+mat-drawer-container {
+  height: 100vh;
+}
+
+mat-drawer {
+  width: 246px;
+  background-color: $primary-color-one;
+}
+
+.avatar {
+  font-size: 30px;
+  color: red;
+  margin-top: -10px;
+}
+
+// h4 {
+//   color: $primary-color-three;
+// }
+
+.menu {
+  list-style: none;
+  margin-top: 45px;
+}
+
+li {
+  padding-bottom: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+span {
+  padding-left: 14px;
+  position: absolute;
+}
