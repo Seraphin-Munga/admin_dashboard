@@ -10,14 +10,25 @@ mat-drawer {
 }
 
 .avatar {
-  font-size: 30px;
-  color: red;
+  font-size: 40px;
+  color: $primary-color-six;
   margin-top: -10px;
 }
 
-// h4 {
-//   color: $primary-color-three;
-// }
+.nav.active {
+  mat-icon {
+    color: $primary-color-six;
+  }
+  span {
+    color: $primary-color-six !important;
+  }
+}
+
+h4 {
+  color: $primary-color-three;
+  margin-top: 10px !important;
+  margin-left: -70px;
+}
 
 .menu {
   list-style: none;
@@ -33,4 +44,5 @@ li {
 span {
   padding-left: 14px;
   position: absolute;
+  color: $primary-color-three;
 }

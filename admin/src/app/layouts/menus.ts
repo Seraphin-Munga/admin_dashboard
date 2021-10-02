@@ -2,22 +2,22 @@ export const menus = [
     {
         text: "DASHBOARD",
         icon: "house_siding",
-        path: ""
+        path: "/dashboard/dashboard"
     },
     {
         text: "USER",
         icon: "portrait",
-        path: ""
+        path: "user"
     },
     {
         text: "EMPLOYEES",
         icon: "people",
-        path: ""
+        path: "EMPLOYEES"
     },
 
     {
         text: "ORDER",
         icon: "border_outer",
-        path: ""
+        path: "ORDER"
     }
 ]
