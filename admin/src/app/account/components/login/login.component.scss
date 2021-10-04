@@ -1,0 +1,10 @@
+@import "../../../../assets/styling/app-color.scss";
+
+.login-container {
+  width: 500px;
+  margin: auto;
+  background-color: $primary-color-three;
+  z-index: 2;
+  position: relative;
+  top: 20vw;
+}
