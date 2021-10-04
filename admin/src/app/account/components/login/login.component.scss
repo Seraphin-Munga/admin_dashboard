@@ -1,10 +1,32 @@
 @import "../../../../assets/styling/app-color.scss";
+@import "../../../../assets/styling/app-inputs.scss";
+@import "../../../../assets/styling/app-button.scss";
 
 .login-container {
-  width: 500px;
+  width: 380px;
   margin: auto;
   background-color: $primary-color-three;
   z-index: 2;
   position: relative;
-  top: 20vw;
+  box-shadow: 0 6px 10px -4px rgb(0 0 0 / 25%);
+  top: 10vw;
+  height: 370px;
+  padding-top: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 34px;
+}
+
+input {
+  @include input();
+}
+
+.card-header {
+  text-align: center;
+  margin-top: -100px;
+}
+
+.btn-login {
+  margin-top: 30px;
+  @include button($primary-color-four);
 }

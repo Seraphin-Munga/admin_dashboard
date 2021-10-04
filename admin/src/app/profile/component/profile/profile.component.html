@@ -1,0 +1,111 @@
+<div class="container">
+    <mat-grid-list cols="2" rowHeight="350px">
+        <mat-grid-tile>
+            <mat-card>
+                <div class="card-img">
+                    <mat-icon class="user-icon">account_circle</mat-icon>
+                </div>
+                <div class="profile-details">
+                    <div>
+                        <span>Seraphin</span>
+                    </div>
+                    <div>
+                        <span>Skywalk Innovation</span>
+                    </div>
+                    <div>
+                        <span>+2789338839303</span>
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+                <mat-grid-list cols="3" rowHeight="100">
+                    <mat-grid-tile>
+                        <i nz-icon nzType="facebook" nzTheme="outline"></i>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <i nz-icon nzType="skype" nzTheme="outline"></i>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <i nz-icon nzType="twitter" nzTheme="outline"></i>
+                    </mat-grid-tile>
+                </mat-grid-list>
+
+            </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-card class="editForm">
+                <mat-grid-list cols="3" rowHeight="100">
+                    <mat-grid-tile>
+                        <nz-form-item>
+                            <nz-form-label nzFor="username">Username</nz-form-label>
+                            <nz-form-control>
+                                <input nz-input name="username" type="text" id="username" />
+                            </nz-form-control>
+                        </nz-form-item>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <nz-form-item>
+                            <nz-form-label nzFor="email">Email Address</nz-form-label>
+                            <nz-form-control>
+                                <input nz-input name="email" type="email" id="email" />
+                            </nz-form-control>
+                        </nz-form-item>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <nz-form-item>
+                            <nz-form-label nzFor="email">Company Name</nz-form-label>
+                            <nz-form-control>
+                                <input nz-input name="company" type="text" id="company" />
+                            </nz-form-control>
+                        </nz-form-item>
+                    </mat-grid-tile>
+                </mat-grid-list>
+
+                <mat-grid-list cols="1">
+                    <nz-form-item>
+                        <nz-form-control>
+                            <input class="address" placeholder="Address" nz-input name="address" type="text"
+                                id="address" />
+                        </nz-form-control>
+                    </nz-form-item>
+                </mat-grid-list>
+
+                <mat-grid-list cols="3" rowHeight="100">
+                    <mat-grid-tile>
+                        <nz-form-item>
+                            <nz-form-label nzFor="city">City</nz-form-label>
+                            <nz-form-control>
+                                <input nz-input name="city" type="text" id="city" />
+                            </nz-form-control>
+                        </nz-form-item>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <nz-form-item>
+                            <nz-form-label nzFor="country">Country</nz-form-label>
+                            <nz-form-control>
+                                <input nz-input name="country" type="text" id="country" />
+                            </nz-form-control>
+                        </nz-form-item>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <nz-form-item>
+                            <nz-form-label nzFor="postalCode">Postal Code</nz-form-label>
+                            <nz-form-control>
+                                <input nz-input name="postalCode" type="text" id="postalCode" />
+                            </nz-form-control>
+                        </nz-form-item>
+                    </mat-grid-tile>
+                </mat-grid-list>
+
+                <mat-grid-list cols="1" rowHeight="100">
+                    <nz-form-item>
+                        <nz-form-control>
+                            <nz-textarea-count [nzMaxCharacterCount]="100">
+                                <textarea rows="3" cols="20" nz-input></textarea>
+                            </nz-textarea-count>
+                        </nz-form-control>
+                    </nz-form-item>
+                </mat-grid-list>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

@@ -7,6 +7,9 @@ import { ResetPasswordComponent } from './components/reset-password/reset-passwo
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { BackgroundImgComponent } from './background-img/background-img.component';
 import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzGridModule } from 'ng-zorro-antd/grid'
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox'
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { NzFormModule } from 'ng-zorro-antd/form';
   imports: [
     CommonModule,
     AccountRoutingModule,
-    NzFormModule
+    NzFormModule,
+    NzButtonModule,
+    NzGridModule,
+    NzCheckboxModule
   ]
 })
 export class AccountModule { }
