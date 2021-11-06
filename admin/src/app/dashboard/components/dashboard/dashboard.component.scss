@@ -1,18 +1,9 @@
 @import "../../../../assets/styling/app-color.scss";
 
-.container {
-  width: 98%;
-  margin: auto;
-}
-
 .container-table {
   width: 98%;
   margin: auto;
   background-color: $primary-color-three;
-}
-
-table {
-  width: 100%;
 }
 
 mat-card {
@@ -23,6 +14,10 @@ mat-card {
 
 .local_mall {
   color: $primary-color-four;
+}
+
+mat-icon {
+  font-size: 53px;
 }
 
 .people {

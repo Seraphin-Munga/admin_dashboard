@@ -7,7 +7,7 @@ export const menus = [
     {
         text: "USER",
         icon: "portrait",
-        path: "user"
+        path: "/user/users"
     },
     {
         text: "EMPLOYEES",

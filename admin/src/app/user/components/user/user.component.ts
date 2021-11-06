@@ -20,16 +20,14 @@ const ELEMENT_DATA: PeriodicElement[] = [
   { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
   { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
 ];
+
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  selector: 'app-user',
+  templateUrl: './user.component.html',
+  styleUrls: ['./user.component.scss']
 })
-export class DashboardComponent {
-
-  public displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+export class UserComponent {
+  public displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'action'];
   public dataSource = ELEMENT_DATA;
-
-
 
 }

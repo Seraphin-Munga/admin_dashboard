@@ -1,0 +1,19 @@
+@import "../../../../assets/styling/app-button.scss";
+@import "../../../../assets/styling/app-color.scss";
+
+.container {
+  margin-top: 120px;
+}
+
+mat-form-field {
+  width: 500px;
+}
+
+.btn-save {
+  color: $primary-color-three;
+  float: right;
+  margin-top: -50px;
+  margin-bottom: 20px;
+  width: 140px;
+  @include button($button-color);
+}

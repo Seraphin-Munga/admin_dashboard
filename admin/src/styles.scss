@@ -14,3 +14,12 @@ body {
 input {
   @include input();
 }
+
+.container {
+  width: 98%;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+}
