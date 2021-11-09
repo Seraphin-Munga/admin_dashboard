@@ -10,6 +10,11 @@ export const menus = [
         path: "/user/users"
     },
     {
+        text: "PRODUCTS",
+        icon: "border_outer",
+        path: "/product/products"
+    },
+    {
         text: "EMPLOYEES",
         icon: "people",
         path: "EMPLOYEES"

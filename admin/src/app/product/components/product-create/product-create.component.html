@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="btn-group">
+        <button class="btn-save" mat-button color="primary">
+            <mat-icon>save</mat-icon>
+            SAVE
+        </button>
+    </div>
+    <mat-card>
+        <div nz-row>
+            <div nz-col nzSpan="8">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Product Name*</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Quantity Per Unit</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Stock Products</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Category*</mat-label>
+                        <mat-select>
+                            <mat-option value="one">First option</mat-option>
+                            <mat-option value="two">Second option</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div nz-col nzSpan="8" nzOffset="8">
+                <div class="clearfix">
+                    <nz-upload class="upload-list-inline" nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+                        nzListType="picture" [(nzFileList)]="fileList2">
+                        <button nz-button>
+                            <span>
+                                <i nz-icon nzType="upload"></i>
+                                Upload
+                            </span>
+                        </button>
+                    </nz-upload>
+                </div>
+            </div>
+        </div>
+
+    </mat-card>
+
+</div>

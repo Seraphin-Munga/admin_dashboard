@@ -1,0 +1,14 @@
+@import "../../../../assets/styling/app-color.scss";
+@import "../../../../assets/styling/app-button.scss";
+
+.container {
+  margin-top: 120px;
+}
+
+.btn-add {
+  color: $primary-color-three;
+  float: right;
+  margin-bottom: 20px;
+  width: 140px;
+  @include button($button-color);
+}
