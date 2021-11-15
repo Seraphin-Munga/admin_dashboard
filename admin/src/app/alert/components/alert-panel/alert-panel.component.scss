@@ -1,0 +1,22 @@
+// .alert-panel {
+//   position: fixed;
+//   width: 100%;
+//   z-index: 1;
+// }
+// @media (max-width: 340px) {
+//   .alert-panel {
+//     top: $mobile-header-height;
+//   }
+// }
+// @media (max-width: 1200px) {
+//   .alert-panel {
+//     top: $desktop-header-height;
+//   }
+// }
+nz-alert {
+  &:first-of-type {
+    padding-top: 10px;
+  }
+
+  z-index: 2;
+}

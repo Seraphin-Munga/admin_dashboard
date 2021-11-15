@@ -1,54 +1,85 @@
 <div class="container">
-    <div class="btn-group">
-        <button class="btn-save" mat-button color="primary">
-            <mat-icon>save</mat-icon>
-            SAVE
-        </button>
-    </div>
-    <mat-card>
-        <div>
-            <mat-form-field appearance="fill">
-                <mat-label>First Name*</mat-label>
-                <input matInput>
-            </mat-form-field>
+    <form [formGroup]="form">
+        <div class="btn-group">
+            <button (click)="save()" class="btn-save" mat-button color="primary">
+                <mat-icon>save</mat-icon>
+                SAVE
+            </button>
         </div>
-        <div>
-            <mat-form-field appearance="fill">
-                <mat-label>Last Name*</mat-label>
-                <input matInput>
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field appearance="fill">
-                <mat-label>Date Of Birth*</mat-label>
-                <input type="date" matInput>
-            </mat-form-field>
-        </div>
+        <mat-card>
 
-        <div>
-            <mat-form-field appearance="fill">
-                <mat-label>Gender*</mat-label>
-                <mat-select>
-                    <mat-option value="one">First option</mat-option>
-                    <mat-option value="two">Second option</mat-option>
-                </mat-select>
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field appearance="fill">
-                <mat-label>Role*</mat-label>
-                <mat-select>
-                    <mat-option value="one">First option</mat-option>
-                    <mat-option value="two">Second option</mat-option>
-                </mat-select>
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field appearance="fill">
-                <mat-label>About Me</mat-label>
-                <textarea matInput></textarea>
-            </mat-form-field>
-        </div>
-    </mat-card>
+            <div nz-row>
+                <div nz-col nzSpan="8">
+                    <div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>First Name*</mat-label>
+                            <input formControlName="firstName" matInput />
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Last Name*</mat-label>
+                            <input formControlName="lastName" matInput />
+                        </mat-form-field>
+                    </div>
 
+                    <div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Telephone*</mat-label>
+                            <input formControlName="telephone" matInput />
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Gender*</mat-label>
+                            <mat-select formControlName="gender">
+                                <mat-option value="M">Male</mat-option>
+                                <mat-option value="F">Female</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                </div>
+                <div nz-col nzSpan="8" nzOffset="8">
+
+                    <div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Email*</mat-label>
+                            <input formControlName="email" matInput />
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Password*</mat-label>
+                            <input formControlName="password" matInput />
+                        </mat-form-field>
+                    </div>
+
+                    <div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Salary*</mat-label>
+                            <input formControlName="salary" type="number" matInput />
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Role*</mat-label>
+                            <mat-select formControlName="roleID">
+                                <mat-option value="2">Employee</mat-option>
+                                <mat-option value="1">Admin</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Address*</mat-label>
+                            <textarea formControlName="address" cols="8" matInput></textarea>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+
+
+        </mat-card>
+    </form>
 </div>

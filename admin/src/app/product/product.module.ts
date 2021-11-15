@@ -16,6 +16,8 @@ import { MatTableModule } from '@angular/material/table';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzUploadModule } from 'ng-zorro-antd/upload';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
     MatDividerModule,
     MatTableModule,
     MatButtonModule,
+    ReactiveFormsModule,
+    HttpClientTestingModule,
     MatFormFieldModule,
     MatSelectModule,
     MatFormFieldModule,

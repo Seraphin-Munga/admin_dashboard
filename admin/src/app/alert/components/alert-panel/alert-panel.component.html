@@ -1,0 +1,12 @@
+<div *ngIf="alerts$" class="alert-panel">
+    <nz-alert *ngFor="let alert of alerts$ | async"
+              [nzType]="alert.type"
+              [nzMessage]="alert.message"
+              [nzDescription]="alert.description"
+              nzShowIcon
+              nzCloseable
+              nzBanner
+              (nzOnClose)="afterClose(alert.id)"></nz-alert>
+</div>
+
+

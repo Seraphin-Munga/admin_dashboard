@@ -11,7 +11,7 @@ const routes: Routes = [
   },
 
   {
-    path: 'user',
+    path: 'employee',
     loadChildren: () =>
       import('../app/user/user.module').then((m) => m.UserModule),
   },
@@ -32,7 +32,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'dashboard/dashboard',
+    redirectTo: '/account/login',
     pathMatch: 'full',
   },
 ];

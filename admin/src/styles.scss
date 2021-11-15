@@ -42,3 +42,7 @@ table {
 :host ::ng-deep .upload-list-inline .ant-upload-animate-leave {
   animation-name: uploadAnimateInlineOut;
 }
+
+.ant-upload.ant-upload-drag {
+  height: 320px;
+}

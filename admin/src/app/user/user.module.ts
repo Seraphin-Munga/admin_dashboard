@@ -13,6 +13,10 @@ import { AddUserComponent } from './components/add-user/add-user.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { SharedModule } from '../shared/shared.module';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [UserComponent, AddUserComponent],
@@ -20,8 +24,12 @@ import { MatInputModule } from '@angular/material/input';
     CommonModule,
     UserRoutingModule,
     MatGridListModule,
+    SharedModule,
     MatCardModule,
+    NzGridModule,
     MatIconModule,
+    ReactiveFormsModule,
+    HttpClientTestingModule,
     MatDividerModule,
     MatTableModule,
     MatButtonModule,

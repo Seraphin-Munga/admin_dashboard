@@ -1,19 +1,22 @@
 <div class="container">
-    <app-background-img></app-background-img>
+    <!-- <app-background-img></app-background-img> -->
+    <app-alert-panel></app-alert-panel>
     <div class="login-container">
+
         <div class="card-header">
             <h1>LOGIN</h1>
         </div>
-        <form>
+        <form [formGroup]="form">
             <nz-form-item>
                 <nz-form-control>
-                    <input nz-input class="email" name="email" placeholder="Email" type="email" id="email" />
+                    <input nz-input formControlName="email" class="email" name="email" placeholder="Email" type="email"
+                        id="email" />
                 </nz-form-control>
             </nz-form-item>
             <nz-form-item>
                 <nz-form-control>
-                    <input nz-input name="password" class="password" placeholder="Password" type="password"
-                        id="password" />
+                    <input nz-input name="password" formControlName="password" class="password" placeholder="Password"
+                        type="password" id="password" />
                 </nz-form-control>
             </nz-form-item>
             <div nz-row>
@@ -26,7 +29,8 @@
             </div>
             <nz-form-item>
                 <nz-form-control>
-                    <button nz-button class="btn-login" nzType="primary" nzBlock>Primary</button>
+                    <button nz-button (click)="login()" [nzLoading]="loading" class="btn-login" nzType="primary"
+                        nzBlock>LOGIN</button>
                 </nz-form-control>
             </nz-form-item>
         </form>

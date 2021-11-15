@@ -8,6 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { AlertModule } from '../alert';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatToolbarModule,
     MatDividerModule,
     MatIconModule,
-    MatGridListModule
+    MatGridListModule,
+    AlertModule
   ]
 })
 export class LayoutModule { }

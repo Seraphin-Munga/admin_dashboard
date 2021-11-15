@@ -11,8 +11,8 @@ const routes: Routes = [
     path: '',
     component: DashboardLayoutComponent,
     children: [
-      { path: 'users', component: UserComponent },
-      { path: 'users/add-user', component: AddUserComponent },
+      { path: 'employees', component: UserComponent },
+      { path: 'employees/add-employee', component: AddUserComponent },
     ],
   },
 ];

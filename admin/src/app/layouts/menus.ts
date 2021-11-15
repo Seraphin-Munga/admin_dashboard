@@ -5,19 +5,14 @@ export const menus = [
         path: "/dashboard/dashboard"
     },
     {
-        text: "USER",
-        icon: "portrait",
-        path: "/user/users"
+        text: "EMPLOYEES",
+        icon: "people",
+        path: "/employee/employees"
     },
     {
         text: "PRODUCTS",
         icon: "border_outer",
         path: "/product/products"
-    },
-    {
-        text: "EMPLOYEES",
-        icon: "people",
-        path: "EMPLOYEES"
     },
 
     {

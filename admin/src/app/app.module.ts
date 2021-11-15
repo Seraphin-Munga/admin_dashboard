@@ -14,6 +14,13 @@ import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { RouterModule } from '@angular/router';
+import { NgxWebstorageModule } from 'ngx-webstorage';
+import { SharedModule } from './shared/shared.module';
+import { AlertModule } from './alert';
+import { EffectsModule } from '@ngrx/effects';
+import { AppEffects } from 'app.effects';
+import { StoreModule } from '@ngrx/store';
+import { reducers } from './reducers/state.reducer';
 
 registerLocaleData(en);
 
@@ -26,11 +33,21 @@ registerLocaleData(en);
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    SharedModule,
     HttpClientModule,
     IconsProviderModule,
     NzLayoutModule,
     NzMenuModule,
-    RouterModule
+    StoreModule.forRoot(reducers, {
+      runtimeChecks: {
+        strictActionImmutability: true,
+        strictStateImmutability: true,
+      },
+    }),
+    RouterModule,
+    AlertModule,
+    EffectsModule.forRoot([AppEffects]),
+    NgxWebstorageModule.forRoot()
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

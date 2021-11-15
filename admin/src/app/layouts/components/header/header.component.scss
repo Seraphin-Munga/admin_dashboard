@@ -23,3 +23,7 @@ mat-toolbar {
   background-color: $hearder-color !important;
   box-shadow: 0 6px 13px -4px rgb(0 0 0 / 25%);
 }
+
+mat-icon {
+  cursor: pointer;
+}

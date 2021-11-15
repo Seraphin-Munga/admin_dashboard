@@ -10,6 +10,10 @@ import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzGridModule } from 'ng-zorro-antd/grid'
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox'
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { SharedModule } from '../shared/shared.module';
+import { AlertModule } from '../alert';
 
 
 @NgModule({
@@ -22,10 +26,14 @@ import { NzCheckboxModule } from 'ng-zorro-antd/checkbox'
   imports: [
     CommonModule,
     AccountRoutingModule,
+    SharedModule,
+    ReactiveFormsModule,
+    HttpClientTestingModule,
     NzFormModule,
     NzButtonModule,
     NzGridModule,
-    NzCheckboxModule
+    NzCheckboxModule,
+    AlertModule
   ]
 })
 export class AccountModule { }
